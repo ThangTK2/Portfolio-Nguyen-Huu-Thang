@@ -8,6 +8,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Songs from "./components/Songs";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 
 function App() {
   useEffect(() => {
@@ -25,6 +26,7 @@ function App() {
       <Songs />
       <Contact />
       <Footer />
+      <ScrollToTopButton />
     </main>
   );
 }

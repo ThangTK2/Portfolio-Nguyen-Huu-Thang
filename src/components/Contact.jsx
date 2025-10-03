@@ -27,7 +27,7 @@ export default function Contact() {
         </aside>
 
         {/*Contact Form*/}
-        <section className="p-8 w-full md:w-1/2">
+        <section id="contact" className="p-8 w-full md:w-1/2">
           <header className="mb-6">
             <h2 className="text-4xl font-bold text-center text-white">
               Contact Us

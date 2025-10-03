@@ -2,6 +2,8 @@ import React from "react";
 import project1 from "/project1.png";
 import project2 from "/project2.png";
 import project3 from "/project3.png";
+import project4 from "/project4.png";
+import project5 from "/project5.png";
 
 const ProjectCard = ({ image, title, description, link }) => {
   return (
@@ -61,6 +63,39 @@ export default function Projects() {
       description:
         "TK2 Blog is a modern blogging platform built with React. It features a clean and responsive design, allowing users to read and share articles on various topics. The blog emphasizes simplicity and user experience, making it easy for readers to navigate and enjoy the content.",
       link: "https://tk2-blog.vercel.app/",
+    },
+    {
+      id: 4,
+      image: project4,
+      title: "Semper Vere",
+      description: `
+        • Built the entire website using Elementor and WordPress.
+        • Customized layout and styling based on the design
+        requirements.
+        • Implemented responsive design for mobile and tablet
+        views.
+        • Collaborated with client to adjust content, structure, and
+        improve UX.`,
+      link: "https://dongt61.sg-host.com/",
+    },
+    {
+      id: 5,
+      image: project5,
+      title: "ProMed East",
+      description: `
+        • Developed and customized forms using Gravity Forms,
+        integrated with ACF and CPT UI to manage dynamic data
+        and display custom content.
+        • Implemented conditional logic to show or hide fields
+        based on user input.
+        • Configured automated email notifications for both users
+        and administrators after form submission.
+        • Customized CSS/JS to ensure the forms matched the
+        website design and were fully responsive across all
+        devices.
+        • Maintained and updated forms as needed based on client
+        requirements.`,
+      link: "https://promedeast.com/dev-request-a-brace-dev-one-page/",
     },
   ];
 

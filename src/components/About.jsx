@@ -51,7 +51,7 @@ export default function About() {
           </p>
           <footer>
             <button className="inline-flex text-white border-2 py-2 px-4 sm:px-6 focus:outline-none hover:bg-[#800bbc] hover:shadow-[0_0_40px_rgba(128,0,128,0.7)] rounded-full text-sm sm:text-lg">
-              Learn More
+              <a href="#contact">Contact</a>
             </button>
           </footer>
         </article>

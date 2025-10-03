@@ -2,11 +2,15 @@ import React, { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import imghero from "/imghero.png";
 import github from "/github.png";
+import gb from "/gb.png";
 import linkedin from "/linkedin.png";
 import facebook from "/facebook.png";
+import fb from "/fb.png";
 import instagram from "/instagram.png";
-// import scl from "/scll.png";
-import Cv from "../assets/CVNguyenHuuThangReactJS.pdf";
+import yt from "/yt.png";
+import scl from "/scl.png";
+import CvReactJS from "../assets/CVNguyenHuuThangReactJS.pdf";
+import CvWP from "../assets/CVNguyenHuuThangWP.pdf";
 
 export default function Hero() {
   const texts = ["Nguyen Huu Thang", "TK2"];
@@ -76,7 +80,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="transition-transform duration-300 hover:scale-110 hover:brightness-125"
             >
-              <img src={github} alt="github" className="w-11 h-11" />
+              <img src={gb} alt="github" className="w-11 h-11" />
             </a>
             <a
               href="https://www.linkedin.com/in/nguyen-huu-thang-ba1b062a1/"
@@ -92,7 +96,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="transition-transform duration-300 hover:scale-110 hover:brightness-125"
             >
-              <img src={facebook} alt="facebook" className="w-11 h-11" />
+              <img src={fb} alt="facebook" className="w-11 h-11" />
             </a>
             <a
               href="https://www.instagram.com/thawng.tk2?fbclid=IwY2xjawNLZk1leHRuA2FlbQIxMABicmlkETE4RVcyTk1pTnR0eHhBTHo4AR4w-gr1Evq5k1r4SH-1w7c406mynraLrO_Wdso5PzTmWdPC19uv8AunZOjwHg_aem_VBC_VkmnKpMExJmW7ZV0hQ"
@@ -102,24 +106,40 @@ export default function Hero() {
             >
               <img src={instagram} alt="instagram" className="w-11 h-11" />
             </a>
-            {/* <a
+            <a
+              href="https://www.youtube.com/@akatk2"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-transform duration-300 hover:scale-110 hover:brightness-125"
+            >
+              <img src={yt} alt="instagram" className="w-11 h-11" />
+            </a>
+            <a
               href="https://soundcloud.com/akatk2"
               target="_blank"
               rel="noopener noreferrer"
               className="transition-transform duration-300 hover:scale-110 hover:brightness-125"
             >
               <img src={scl} alt="instagram" className="w-11 h-11" />
-            </a> */}
+            </a>
           </div>
 
           {/* Resume Download */}
           <a
-            href={Cv}
+            href={CvReactJS}
             download
             className="inline-block mt-6 text-white border-2 py-2 px-6 
                        hover:bg-purple-800 rounded-full text-lg"
           >
-            Download CV
+            Download CV ReactJS
+          </a>
+          <a
+            href={CvWP}
+            download
+            className="inline-block mt-6 text-white border-2 py-2 px-6 
+                       hover:bg-purple-800 rounded-full text-lg"
+          >
+            Download CV PHP WordPress
           </a>
         </section>
 

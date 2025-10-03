@@ -2,6 +2,8 @@ import React from "react";
 import motdoi from "/motdoi.jpg";
 import matketnoi from "/matketnoi.jpg";
 import saoemvotinh from "/saoemvotinh.jpg";
+import motnammoibinhan from "/motnammoibinhan.jpg";
+import ngoailecuanhau from "/ngoailecuanhau.png";
 
 const SongCard = ({ image, title, description, link }) => {
   return (
@@ -55,6 +57,29 @@ export default function Projects() {
       title: "Sao Em Vô Tình - Lofi Ver. - Thang x TK2 ♪",
       description: "Sao Em Vô Tình - Lofi Ver. - Thang x TK2 ♪",
       link: "https://soundcloud.com/akatk2/sao-em-vo-tinh-lofi-ver-thang",
+    },
+    {
+      id: 4,
+      image: motnammoibinhan,
+      title:
+        "Một Năm Mới Bình An Remix - Sơn Tùng M-TP x TK2 Remix | Nhạc Tết Remix ♪",
+      description:
+        "Một Năm Mới Bình An Remix - Sơn Tùng M-TP x TK2 Remix | Nhạc Tết Remix ♪",
+      link: "https://soundcloud.com/akatk2/sao-em-vo-tinh-lofi-ver-thang",
+    },
+    {
+      id: 6,
+      image: matketnoi,
+      title: "Về Bên Anh x Đom Đóm [Remix.] - Jack - J97 x TK2 ♪",
+      description: "Về Bên Anh x Đom Đóm [Remix.] - Jack - J97 x TK2 ♪",
+      link: "https://soundcloud.com/akatk2/ve-ben-anh-x-dom-dom-remix-jack-j97-x-tk2",
+    },
+    {
+      id: 5,
+      image: ngoailecuanhau,
+      title: "Ngoại Lệ Của Nhau [Remix Ver1.] - Obito - TK2 Remix ♪",
+      description: "Ngoại Lệ Của Nhau [Remix Ver1.] - Obito - TK2 Remix ♪",
+      link: "https://www.youtube.com/watch?v=wuw8hJe232I",
     },
   ];
 

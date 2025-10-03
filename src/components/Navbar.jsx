@@ -41,9 +41,9 @@ export default function Navbar() {
         {/* Desktop Logo */}
         <a
           href="/"
-          className="hidden md:block text-4xl font-bold italic 
-             bg-gradient-to-r from-[#6d2897] via-[#8e6cf5] to-[#bb61c5] 
-             bg-clip-text text-transparent" //hidden md: chỉ hiện từ md (>=768px) trở lên.
+          className="hover:text-purple-300 transition-colors duration-300 drop-shadow-[0_0_10px_#8e6cf5]
+          hidden md:block text-4xl font-bold italic text-purple-400 "
+          //hidden md:block chỉ hiện từ md (>=768px) trở lên.
         >
           Nguyen Huu Thang
         </a>
@@ -78,7 +78,7 @@ export default function Navbar() {
             </a>
           ))}
           <button className="inline-flex font-semibold text-white border-2 py-2 px-6 focus:outline-none hover:bg-purple-800 rounded-full text-lg transition-colors duration-300">
-            Contact
+            <a href="#contact">Contact</a>
           </button>
         </nav>
       </div>
@@ -114,7 +114,7 @@ export default function Navbar() {
           className="inline-flex text-white font-semibold border-2 py-2 px-6 focus:outline-none 
      hover:bg-purple-800 rounded-full text-lg transition-colors duration-300"
         >
-          Contact
+          <a href="#contact">Contact</a>
         </button>
       </div>
     </header>
