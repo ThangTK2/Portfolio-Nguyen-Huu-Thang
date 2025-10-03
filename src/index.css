@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+  /* click vào menu nó sẽ trượt smooth xuống section đó */
+}
