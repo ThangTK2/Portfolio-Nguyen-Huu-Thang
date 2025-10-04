@@ -50,8 +50,20 @@ export default function About() {
             blending creativity and technology to deliver unique projects.
           </p>
           <footer>
-            <button className="inline-flex text-white border-2 py-2 px-4 sm:px-6 focus:outline-none hover:bg-[#800bbc] hover:shadow-[0_0_40px_rgba(128,0,128,0.7)] rounded-full text-sm sm:text-lg">
-              <a href="#contact">Contact</a>
+            <button
+              className="cursor-pointer relative inline-flex text-white border-2 py-2 px-4 sm:px-6 rounded-full text-sm sm:text-lg 
+  overflow-hidden group"
+            >
+              {/* Background gradient bằng before */}
+              <span
+                className="absolute left-0 top-0 h-full w-0 bg-gradient-to-r from-[#6d2897] via-[#8e6cf5] to-[#bb61c5]
+    transition-all duration-300 ease-out group-hover:w-full"
+              ></span>
+
+              {/* Nội dung nút */}
+              <a className="relative z-10" href="#contact">
+                Contact
+              </a>
             </button>
           </footer>
         </article>

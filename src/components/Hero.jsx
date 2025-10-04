@@ -66,7 +66,7 @@ export default function Hero() {
           data-aos-delay="500"
         >
           <h1 className="text-4xl md:text-6xl font-bold text-white">
-            Hi, I'm <span className="text-purple-400">{displayedText}</span>
+            Hi, I'm <span className="text-purple-400 ">{displayedText}</span>
           </h1>
           <p className="mt-4 text-lg text-gray-300">
             Web Developer & Music Producer
@@ -74,72 +74,79 @@ export default function Hero() {
 
           {/* Social Icons */}
           <div className="flex items-center space-x-4 mt-6">
-            <a
-              href="https://github.com/ThangTK2"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition-transform duration-300 hover:scale-110 hover:brightness-125"
-            >
-              <img src={gb} alt="github" className="w-11 h-11" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/nguyen-huu-thang-ba1b062a1/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition-transform duration-300 hover:scale-110 hover:brightness-125"
-            >
-              <img src={linkedin} alt="linkedin" className="w-11 h-11" />
-            </a>
-            <a
-              href="https://www.facebook.com/Thang.TK2"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition-transform duration-300 hover:scale-110 hover:brightness-125"
-            >
-              <img src={fb} alt="facebook" className="w-11 h-11" />
-            </a>
-            <a
-              href="https://www.instagram.com/thawng.tk2?fbclid=IwY2xjawNLZk1leHRuA2FlbQIxMABicmlkETE4RVcyTk1pTnR0eHhBTHo4AR4w-gr1Evq5k1r4SH-1w7c406mynraLrO_Wdso5PzTmWdPC19uv8AunZOjwHg_aem_VBC_VkmnKpMExJmW7ZV0hQ"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition-transform duration-300 hover:scale-110 hover:brightness-125"
-            >
-              <img src={instagram} alt="instagram" className="w-11 h-11" />
-            </a>
-            <a
-              href="https://www.youtube.com/@akatk2"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition-transform duration-300 hover:scale-110 hover:brightness-125"
-            >
-              <img src={yt} alt="instagram" className="w-11 h-11" />
-            </a>
-            <a
-              href="https://soundcloud.com/akatk2"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition-transform duration-300 hover:scale-110 hover:brightness-125"
-            >
-              <img src={scl} alt="instagram" className="w-11 h-11" />
-            </a>
+            {[
+              { href: "https://github.com/ThangTK2", img: gb, alt: "github" },
+              {
+                href: "https://www.linkedin.com/in/nguyen-huu-thang-ba1b062a1/",
+                img: linkedin,
+                alt: "linkedin",
+              },
+              {
+                href: "https://www.facebook.com/Thang.TK2",
+                img: fb,
+                alt: "facebook",
+              },
+              {
+                href: "https://www.instagram.com/thawng.tk2",
+                img: instagram,
+                alt: "instagram",
+              },
+              {
+                href: "https://www.youtube.com/@akatk2",
+                img: yt,
+                alt: "youtube",
+              },
+              {
+                href: "https://soundcloud.com/akatk2",
+                img: scl,
+                alt: "soundcloud",
+              },
+            ].map(({ href, img, alt }, i) => (
+              <a
+                key={i}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform duration-500 hover:scale-125 hover:brightness-125 
+                 animate-float"
+                style={{ animationDelay: `${i * 0.15}s` }}
+              >
+                <img src={img} alt={alt} className="w-11 h-11" />
+              </a>
+            ))}
           </div>
 
           {/* Resume Download */}
           <a
             href={CvReactJS}
             download
-            className="inline-block mt-6 text-white border-2 py-2 px-6 
-                       hover:bg-purple-800 rounded-full text-lg"
+            className="cursor-pointer relative inline-block mt-6 text-white border-2 py-2 px-6 rounded-full text-lg 
+             overflow-hidden group"
           >
-            Download CV ReactJS
+            {/* Background gradient */}
+            <span
+              className="absolute left-0 top-0 h-full w-0 bg-gradient-to-r from-[#6d2897] via-[#8e6cf5] to-[#bb61c5] 
+               transition-all duration-500 ease-out group-hover:w-full"
+            ></span>
+
+            {/* Nội dung */}
+            <span className="relative z-10">Download CV ReactJS</span>
           </a>
+
           <a
             href={CvWP}
             download
-            className="inline-block mt-6 text-white border-2 py-2 px-6 
-                       hover:bg-purple-800 rounded-full text-lg"
+            className="cursor-pointer relative inline-block mt-6 text-white border-2 py-2 px-6 rounded-full text-lg 
+             overflow-hidden group"
           >
-            Download CV PHP WordPress
+            {/* Background gradient */}
+            <span
+              className="absolute left-0 top-0 h-full w-0 bg-gradient-to-r from-[#6d2897] via-[#8e6cf5] to-[#bb61c5] 
+               transition-all duration-500 ease-out group-hover:w-full"
+            ></span>
+
+            {/* Nội dung */}
+            <span className="relative z-10">Download CV PHP WordPress</span>
           </a>
         </section>
 

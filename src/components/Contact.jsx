@@ -4,12 +4,15 @@ import imghero from "/imghero.png";
 export default function Contact() {
   return (
     <section
-      data-aos="fade-up"
-      data-aos-delay="300"
+      id="#contact"
       className="min-h-screen overflow-hidden justify-center flex items-center p-6 mt-10 relative"
     >
       <article className="shadow-lg rounded-lg flex flex-col md:flex-row max-w-4xl w-full relative">
-        <aside className="w-full md:w-1/2 relative flex items-center justify-center">
+        <aside
+          data-aos="fade-right"
+          data-aos-delay="300"
+          className="w-full md:w-1/2 relative flex items-center justify-center"
+        >
           {/* Gradient background */}
           <div
             className="absolute z-0 w-[250px] h-[250px] sm:w-[400px] sm:h-[400px] rounded-3xl 
@@ -27,7 +30,12 @@ export default function Contact() {
         </aside>
 
         {/*Contact Form*/}
-        <section id="contact" className="p-8 w-full md:w-1/2">
+        <section
+          data-aos="fade-left"
+          data-aos-delay="300"
+          id="contact"
+          className="p-8 w-full md:w-1/2"
+        >
           <header className="mb-6">
             <h2 className="text-4xl font-bold text-center text-white">
               Contact Us
@@ -82,8 +90,18 @@ export default function Contact() {
                 className="w-full px-4 py-2 text-white bg-gray-900 rounded-lg focus:outline-none"
               ></textarea>
             </div>
-            <button className="cursor-pointer w-full text-white border-2 py-2 px-6 focus:outline-none hover:bg-[#801b9c] hover:shadow-[0_0_40px_rgba(128,0,128,0.7)] rounded-full text-lg">
-              Send Message
+            <button
+              className="cursor-pointer relative w-full text-white border-2 py-2 px-6 rounded-full text-lg 
+  overflow-hidden group"
+            >
+              {/* Background gradient */}
+              <span
+                className="absolute left-0 top-0 h-full w-0 bg-gradient-to-r from-[#6d2897] via-[#8e6cf5] to-[#bb61c5]
+    transition-all duration-500 ease-out group-hover:w-full"
+              ></span>
+
+              {/* Nội dung nút */}
+              <span className="relative z-10">Send Message</span>
             </button>
           </form>
         </section>
