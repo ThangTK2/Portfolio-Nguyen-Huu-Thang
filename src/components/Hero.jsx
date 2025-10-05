@@ -109,7 +109,7 @@ export default function Hero() {
                  animate-float"
                 style={{ animationDelay: `${i * 0.15}s` }}
               >
-                <img src={img} alt={alt} className="w-11 h-11" />
+                <img src={img} alt={alt} className="w-11 h-11 object-cover" />
               </a>
             ))}
           </div>
