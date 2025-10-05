@@ -9,6 +9,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Songs from "./components/Songs";
 import ScrollToTopButton from "./components/ScrollToTopButton";
+import CustomCursor from "./components/CustomCursor";
 
 function App() {
   useEffect(() => {
@@ -27,6 +28,7 @@ function App() {
       <Contact />
       <Footer />
       <ScrollToTopButton />
+      <CustomCursor />
     </main>
   );
 }

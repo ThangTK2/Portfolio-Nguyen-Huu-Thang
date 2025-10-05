@@ -39,12 +39,11 @@ export default function About() {
           className="text-center lg:text-left relative"
         >
           <div className="absolute z-0 w-40 h-40 sm:w-60 sm:h-60 bg-[#cd3cf5] rounded-full blur-3xl opacity-50 -top-5 left-10"></div>
-          <header>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
-              About Me
-            </h1>
-          </header>
-          <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-6 sm:mb-8 leading-relaxed">
+
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-4xl font-bold mb-4 sm:mb-6">
+            About Me
+          </h1>
+          <p className="text-sm sm:text-base md:text-base text-gray-300 mb-6 sm:mb-8 leading-relaxed">
             I'm a passionate Web Developer and Music Producer, creating engaging
             web experiences by day and crafting melodies by night. I love
             blending creativity and technology to deliver unique projects.

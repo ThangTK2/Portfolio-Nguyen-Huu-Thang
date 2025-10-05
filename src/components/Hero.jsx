@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import imghero from "/imghero.png";
-import github from "/github.png";
-import gb from "/gb.png";
-import linkedin from "/linkedin.png";
-import facebook from "/facebook.png";
+import gb from "/github.png";
 import fb from "/fb.png";
-import instagram from "/instagram.png";
 import yt from "/yt.png";
 import scl from "/scl.png";
+import ig from "/ig.png";
+import linked from "/linked.png";
 import CvReactJS from "../assets/CVNguyenHuuThangReactJS.pdf";
 import CvWP from "../assets/CVNguyenHuuThangWP.pdf";
 
@@ -78,7 +76,7 @@ export default function Hero() {
               { href: "https://github.com/ThangTK2", img: gb, alt: "github" },
               {
                 href: "https://www.linkedin.com/in/nguyen-huu-thang-ba1b062a1/",
-                img: linkedin,
+                img: linked,
                 alt: "linkedin",
               },
               {
@@ -88,7 +86,7 @@ export default function Hero() {
               },
               {
                 href: "https://www.instagram.com/thawng.tk2",
-                img: instagram,
+                img: ig,
                 alt: "instagram",
               },
               {

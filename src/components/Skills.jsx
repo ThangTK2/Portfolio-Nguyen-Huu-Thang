@@ -11,7 +11,7 @@ import mysql from "/mysql.webp";
 import git from "/git.svg";
 import fl from "/fl.png";
 import csharp from "/csharp.png";
-import php from "/php.svg";
+import php from "/php.png";
 import bootstrap from "/bootstrap.png";
 
 // Data chia nhóm

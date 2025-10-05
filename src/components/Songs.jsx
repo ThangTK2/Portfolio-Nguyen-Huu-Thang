@@ -4,6 +4,7 @@ import matketnoi from "/matketnoi.jpg";
 import saoemvotinh from "/saoemvotinh.jpg";
 import motnammoibinhan from "/motnammoibinhan.jpg";
 import ngoailecuanhau from "/ngoailecuanhau.png";
+import dungvianhmakhoc from "/dungvianhmakhoc.png";
 
 const SongCard = ({ image, title, description, link }) => {
   return (
@@ -65,14 +66,16 @@ export default function Projects() {
         "Một Năm Mới Bình An Remix - Sơn Tùng M-TP x TK2 Remix | Nhạc Tết Remix ♪",
       description:
         "Một Năm Mới Bình An Remix - Sơn Tùng M-TP x TK2 Remix | Nhạc Tết Remix ♪",
-      link: "https://soundcloud.com/akatk2/sao-em-vo-tinh-lofi-ver-thang",
+      link: "https://www.youtube.com/watch?time_continue=2&v=PD-lVzCpsfg",
     },
     {
       id: 6,
-      image: matketnoi,
-      title: "Về Bên Anh x Đom Đóm [Remix.] - Jack - J97 x TK2 ♪",
-      description: "Về Bên Anh x Đom Đóm [Remix.] - Jack - J97 x TK2 ♪",
-      link: "https://soundcloud.com/akatk2/ve-ben-anh-x-dom-dom-remix-jack-j97-x-tk2",
+      image: dungvianhmakhoc,
+      title:
+        "Đừng Vì Anh Mà Khóc [Lo-Fi Ver.] - Quang Hùng MasterD x TK2 Lofi ♪",
+      description:
+        "Đừng Vì Anh Mà Khóc [Lo-Fi Ver.] - Quang Hùng MasterD x TK2 Lofi ♪",
+      link: "https://www.youtube.com/watch?v=qoaNV844fLg",
     },
     {
       id: 5,
@@ -92,9 +95,9 @@ export default function Projects() {
             Featured <span className="text-purple-400">Songs</span>
           </h1>
           <p className="text-gray-400 mt-2 sm:mt-4 text-sm sm:text-base max-w-2xl mx-auto">
-            Explore my featured songs, where creativity meets technology. From
-            lo-fi beats to melodic vibes, each track reflects my journey as both
-            a Web Developer and Music Producer.
+            Explore my featured songs — a fusion of creativity and rhythm. From
+            chill lo-fi beats to vibrant remixes, each track captures a piece of
+            my musical journey.
           </p>
         </header>
       </section>
