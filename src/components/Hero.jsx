@@ -133,7 +133,6 @@ export default function Hero() {
                   src={img}
                   alt={alt}
                   className="w-11 h-11 object-contain "
-                  loading="lazy"
                 />
               </a>
             ))}
