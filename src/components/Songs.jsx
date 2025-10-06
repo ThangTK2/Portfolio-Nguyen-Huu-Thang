@@ -87,7 +87,7 @@ export default function Projects() {
   ];
 
   return (
-    <main className="p-4 pt-18" id="songs">
+    <main className="p-4" id="songs">
       {/* Hero Section */}
       <section data-aos="fade-up" data-aos-delay="300">
         <header className="text-center">

@@ -100,7 +100,7 @@ export default function Projects() {
   ];
 
   return (
-    <main className="p-4" id="projects">
+    <main className="p-4 pb-18" id="projects">
       {/* Hero Section */}
       <section data-aos="fade-up" data-aos-delay="300">
         <header className="text-center">
